@@ -114,7 +114,7 @@ ul li a:hover{
 .about{
     height: 100vh;
     background: #2e4530;
-    padding: 0 10px;
+
 }
 .about h1{
     background: #173f19;
@@ -123,16 +123,20 @@ ul li a:hover{
     height: 50px;
     display: flex;
     align-items: center;
-    padding: 5px;
-    margin: 0;
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
 }
 .about img{
     float: left;
-    padding: 0px 10px;
+    padding: 10px 10px;
     border-radius: 15%;
 }
 .about img span{
     diplay: none;
+}
+.about p{
+    color: #b8ceba;
 }
 
 
