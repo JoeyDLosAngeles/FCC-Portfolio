@@ -91,6 +91,9 @@ ul li a:link{
 ul li a:visited{
     color: #012503;
 }
+ul li a:hover{
+    color: ghostwhite;
+}
 
 
 .welcome-section{
@@ -244,5 +247,7 @@ footer a:visited{
         float: none;
         width: 50vw;
     }
-
+    .project-tile{
+        margin: 10px;
+    }
 }
