@@ -165,8 +165,10 @@ ul li a:hover{
 .projects ul li{
     background: #94ab96;
     color: #173f19;
-    text-align: center;
-   
+    text-align: center;  
+}
+.project-tile{
+    margin: 10px;
 }
 
 
