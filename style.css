@@ -1,0 +1,248 @@
+body{
+    background-color: #012503;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(1.1em + 0.5vw);
+    color: #94ab96;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+ul{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    margin: 0 auto; 
+    grid-template-areas: 
+    "header header header header"
+    "welcome welcome welcome welcome"
+    "about about about about"
+    "projects projects projects projects"
+    "contact contact contact contact"
+    "footer footer footer footer";
+}
+/* Declare grid are */
+header{
+    grid-area: header;
+}
+.welcome-section{
+    grid-area: welcome;
+}
+.about{
+    grid-area: about;
+}
+.projects{
+    grid-area: projects;
+}
+.contact{
+    grid-area: contact;
+}
+footer{
+    grid-area: footer;
+}
+/* #### Section styles #### */
+
+header{
+    background: #94ab96;
+    color: #012503;
+    display: flex; 
+    justify-content: space-between;
+    height: 50px;
+    width: 100vw;
+    position: sticky;
+    top: 0px;
+        z-index: 6;
+}
+header img{
+    height: 40px;
+    margin: auto 5px;
+
+}
+header ul{
+    display: flex;
+    height: 10vh;
+    margin: auto;
+    padding: 0; 
+}
+header li{
+    height: 50px;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav #navbar{
+    margin: 0;
+    padding: 0;
+
+}
+ul li a:link{
+    font-weight: bold;
+    font-size: calc(.5em + 1vw);
+    color: #012503;
+    width: 10vw;
+    text-align: right;
+    text-decoration: none;
+}
+ul li a:visited{
+    color: #012503;
+}
+
+
+.welcome-section{
+    height: 100vh;
+    margin: 0px auto;
+    text-align: center;
+}
+.welcome-section img{
+    padding: 200px 0px 0px 0px;
+    width: 80vw;
+}
+.welcome-section h1{
+    font-size: calc(1.0em + 1.5vw);
+    margin: 0 auto;
+}
+
+
+.about{
+    height: 100vh;
+    background: #2e4530;
+    padding: 0 10px;
+}
+.about h1{
+    background: #173f19;
+    color: #94ab96;
+    font-size: calc(.5em + 1vw);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 0;
+}
+.about img{
+    float: left;
+    padding: 0px 10px;
+    border-radius: 15%;
+}
+.about img span{
+    diplay: none;
+}
+
+
+.projects{    
+    background-color: #173f19;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: max-content; 
+    justify-content: space-around;
+    align-items: center;
+    height: 100hv;
+}
+.projects h1{
+    background: #94ab96;
+    color: #173f19;
+    font-size: calc(.5em + 1vw);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+    z-index: 0;
+}
+.projects ul.project-title{
+    margin: 20px auto;
+    padding: 0;
+}
+.projects ul li{
+    background: #94ab96;
+    color: #173f19;
+    text-align: center;
+   
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: max-content;
+    height: 100vh;
+    background: #94ab96;
+    color: #012503;
+
+}
+contact ul{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.contact h1{
+    background: #5a7a5c;
+    color: #012503;
+    font-size: calc(.5em + 1vw);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+    z-index: 0; 
+}
+.contact ul{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.contact img{
+    width: calc(1em + 2vw);
+}
+
+
+footer{
+    text-align: center;
+    font-size: 18px;
+}
+footer a:link{
+    color: #94ab96
+}
+footer a:visited{
+    color: #94ab96
+}
+
+@media screen and (max-width: 450px){ /*--#######   Mobile ####### --*/
+    header{
+        background: #94ab96;
+        color: #012503;
+        display: inline-block; 
+        position: sticky;
+        top: -50px;
+        text-align: center;
+
+    }
+    header ul{
+        position: sticky;
+        top: 100px;
+        background: #5a7a5c;
+        height: 50px;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    .about{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .about img{
+        float: none;
+        width: 50vw;
+    }
+
+}

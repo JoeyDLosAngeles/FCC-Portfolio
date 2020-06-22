@@ -3,14 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fcc Portfolio Site</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Joey D. LosAngeles Portfolio Site</title>
 
 </head>
 <body>
-    <header><h1>Joey D. Los Angeles Portfolio</h1></header>
-    
-    <footer>
-        Created by <a href="mailto:JoeyDLosAngeles@gmail.com">JoeyDLosAngeles@gmail.com</a>
-    </footer>
+    <div class="container">
+        <header>
+                <a href="#welcome-section" ><img src="img/JDLA_rect_sm.png" alt="Joey D Los Angeles Logo"></a>
+                <nav id="navbar">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <section id="welcome-section" class="welcome-section">
+            <img src="img/JDLA_Rect_Large.png" alt="Joey D Los Angeles Logo">
+            <h1>Web design / Graphic Designer</h1>
+        </section>
+
+        <section id="about" class="about">
+            <h1>About</h1>
+            <p><img src="img/joe_dunavan_w_dog_SM.jpg" alt="Photo of Joe with dog"><span><br></span>
+            I am a small business owner of a successful party entertainment business in business since 2011 offering great customer service. I bring over 10 years of professional Graphic
+            Design experience in the publishing world and over a decade of experience in customer service to the table. I’ve
+            acquired several years' management experience in customer service and in a business environment. I feel I would be a
+            great asset to any team. In addition I have received an associates degree in Programing for business along with several certificates in web development.</p>
+        </section>
+        <section id="projects" class="projects">
+            <h1>Projects</h1>
+            <div class="project-tile">
+                <ul>
+                    <li><a href="https://fcc-tribute-project-joeyd.netlify.app"><img src="img/1-Tribute-page-screenshot.png" alt="Tribute Screenshot"></a></li>
+                    <li>Tribute Page</li>
+                </ul>
+            </div>
+            <div class="project-tile">
+                <ul>
+                    <li><a href="https://fcc-survey-project-joeyd.netlify.app/"><img src="img/2-Survey-form-screenshot.png" alt="Survey form screenshot"></a></li>
+                    <li>Survey Form Page</li>
+                </ul>
+            </div>
+            <div class="project-tile">
+                <ul>
+                    <li><a href="https://fcc-landing-page-project.netlify.app"><img src="img/3-Landing-screenshot.png" alt="Landing Page"></a></li>
+                    <li>Landing Page</li>
+                </ul>
+            </div>
+            <div class="project-tile">
+                <ul>
+                    <li><a href="https://fcc-technical-document-project.netlify.app/"><img src="img/4-Tech-document-screenshot.png" alt="screen shot of tech document screen shot"></a></li>
+                    <li>Technical Document</li>
+                </ul>
+            </div>
+            <div class="project-tile">
+                <ul>
+                    <li><a href="https://joespartyanimals-new.netlify.app/"><img src="img/5-JPA-personal-screenshot.png" alt="Screen shot of my personal business page"></a></li>
+                    <li>Personal business page</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h1>Contact</h1>
+            <ul>
+                <li><a href="https://github.com/JoeyDLosAngeles" id="profile-link" target="_blank"><img src="img/github_.png" alt="github logo">GitHub</a></li>
+                <li><a href="https://twitter.com/JoeyDLosAngele1" target="_blank"><img src="img/twitter_.png" alt="Twitter logo">Twitter</a></li>
+                <li><a href="mailto:joeydlosangeles@gmail.com" target="_blank"><img src="img/email.png" alt="Email logo"> Email</a></li>
+            </ul>
+
+        </section>    
+        <footer>
+            <p>This site has been created for a porject for <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage">Freecodecamp.org</a></p>
+        </footer>
+    </div>
 </body>
 </html>
